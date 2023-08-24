@@ -10,6 +10,7 @@ export default {
         red: "#b30000",
         yellow: "#FDCC49",
         grey: "#4a4a4a",
+        orange: "#f28107",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
       },
@@ -18,14 +19,14 @@ export default {
         "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
 
         "gradient-rainblue":
-        "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+        "linear-gradient(90deg, #b30000 14.53%, #f28107 69.36%, #FDCC49 117.73%)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
       },
       content: {
-        brush: "url('./assets/brush.png')",
+        brush: "url('./assets/brush-red (1).png')",
       
       },
       screens: {
