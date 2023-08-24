@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   mode: 'jit', // mejores modicicaciones y caracteristicas extras 
   theme: {
     extend: {
       colors: {
         "deep-blue": "#010026",
         blue: "#2CBCE9",
-        red: "#DC4492",
+        red: "#b30000",
         yellow: "#FDCC49",
-        grey: "#ededed",
+        grey: "#4a4a4a",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
       },
@@ -26,9 +26,7 @@ export default {
       },
       content: {
         brush: "url('./assets/brush.png')",
-        person1: "url('./assets/person-1.png')",
-        person2: "url('./assets/person-2.png')",
-        person3: "url('./assets/person-3.png')",
+      
       },
       screens: {
         xs: "480px",

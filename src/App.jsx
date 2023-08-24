@@ -1,8 +1,16 @@
+import Navbar from "./scenes/Navbar";
+import { useState } from "react";
+import useMediaQuery from "./hooks/useMediaQuery";
+
 function App() {
+  const [selectedPage, setSelectedPage] = useState("home");
+  // esto cambiara el min width en 1060px
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+
   return (
-    <>
-      <p>Portfolio</p>
-    </>
+    <div className="app bg-deep-blue">
+      <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+    </div>
   );
 }
 
