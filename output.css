@@ -536,12 +536,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.static{
-  position: static;
-}
-
 .fixed{
   position: fixed;
+}
+
+.relative{
+  position: relative;
 }
 
 .bottom-0{
@@ -552,8 +552,16 @@ video {
   right: 0px;
 }
 
+.right-7{
+  right: 1.75rem;
+}
+
 .top-0{
   top: 0px;
+}
+
+.top-\[60\%\]{
+  top: 60%;
 }
 
 .z-40{
@@ -573,8 +581,16 @@ video {
   display: flex;
 }
 
+.h-3{
+  height: 0.75rem;
+}
+
 .h-full{
   height: 100%;
+}
+
+.w-3{
+  width: 0.75rem;
 }
 
 .w-5\/6{
@@ -617,13 +633,17 @@ video {
   gap: 4rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
 
-.bg-blue{
+.bg-dark-grey{
   --tw-bg-opacity: 1;
-  background-color: rgb(44 188 233 / var(--tw-bg-opacity));
+  background-color: rgb(117 117 117 / var(--tw-bg-opacity));
 }
 
 .bg-deep-blue{
@@ -634,6 +654,11 @@ video {
 .bg-red{
   --tw-bg-opacity: 1;
   background-color: rgb(179 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-yellow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 204 73 / var(--tw-bg-opacity));
 }
 
 .p-12{
@@ -647,31 +672,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-0{
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .font-opensans{
@@ -737,7 +737,54 @@ body,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:left-\[-50\%\]::before{
+  content: var(--tw-content);
+  left: -50%;
+}
+
+.before\:top-\[-50\%\]::before{
+  content: var(--tw-content);
+  top: -50%;
+}
+
+.before\:h-6::before{
+  content: var(--tw-content);
+  height: 1.5rem;
+}
+
+.before\:w-6::before{
+  content: var(--tw-content);
+  width: 1.5rem;
+}
+
+.before\:rounded-full::before{
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.before\:border-2::before{
+  content: var(--tw-content);
+  border-width: 2px;
+}
+
+.before\:border-yellow::before{
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(253 204 73 / var(--tw-border-opacity));
+}
+
 .hover\:text-yellow:hover{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1060px){
+  .md\:h-full{
+    height: 100%;
+  }
 }
