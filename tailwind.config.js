@@ -27,6 +27,8 @@ export default {
       },
       content: {
         brush: "url('./assets/brush-red (1).png')",
+        smoke2: "url('./public/assets/smoke22.png')",
+        smoke: "url('./public/assets/smoke.png')"
       
       },
       screens: {

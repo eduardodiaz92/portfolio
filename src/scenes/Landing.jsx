@@ -45,14 +45,14 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Randy {""}
+            Eduardo {""}
             <span
-              className="xs: relative xs:text-red xs:font-semibold z-20
-                xs:before:content-brush before:absolute before:-left-[25px]
-                before:-top-[70px] before:z-[-1]
+              className="xs: relative xs:text-yellow xs:font-semibold z-20
+                xs:before:content-smoke2 before:absolute before:-left-[25px]
+                before:-top-[70px]  before:z-[-1]
                 "
             >
-              Marsh
+              Díaz
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
@@ -73,7 +73,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-red rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500"
+            className="bg-gradient-rainblue text-white rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-red transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
