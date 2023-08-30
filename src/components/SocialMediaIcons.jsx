@@ -1,3 +1,9 @@
+import Linkedin from "@assets/linkedin.png";
+import Github from "@assets/github-30-2.png";
+import Twitter from "@assets/twitter.png";
+import Facebook from "@assets/facebook.png";
+import Instagram from "@assets/instagram.png";
+
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
@@ -7,7 +13,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src="../../public/assets/linkedin.png" alt="linkedin-link" />
+        <img src={Linkedin} alt="linkedin-link" />
       </a>
 
       <a
@@ -16,7 +22,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src="../../public/assets/github-30-2.png" alt="github-link" />
+        <img src={Github} alt="github-link" />
       </a>
 
       <a
@@ -25,7 +31,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src="../../public/assets/twitter.png" alt="twitter-link" />
+        <img src={Twitter} alt="twitter-link" />
       </a>
 
       <a
@@ -34,7 +40,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src="../../public/assets/facebook.png" alt="facebook-link" />
+        <img src={Facebook} alt="facebook-link" />
       </a>
 
       <a
@@ -43,7 +49,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="instagram-link" src="../../public/assets/instagram.png" />
+        <img alt="instagram-link" src={Instagram} />
       </a>
     </div>
   );

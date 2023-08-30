@@ -1,5 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import ReactShop from "@assets/react-shop.png";
+import ReactGame from "@assets/gato.png";
 
 const container = {
   hidden: {},
@@ -107,7 +109,7 @@ const Projects = () => {
                 </a>
               </p>
             </div>
-            <img src={"../../public/assets/gato.png"} />
+            <img src={ReactGame} />
           </motion.div>
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
@@ -125,7 +127,7 @@ const Projects = () => {
                 </a>
               </p>
             </div>
-            <img src={"../../public/assets/react-shop.png"} />
+            <img src={ReactShop} />
           </motion.div>
         </motion.div>
       </div>
