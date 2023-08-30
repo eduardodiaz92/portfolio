@@ -24,32 +24,7 @@ const MySkills = () => {
             MY <span className="text-red ">SKILLS</span>
           </p>
           <LineGradient width="w-/3" />
-          <p className="mt-10 mb-7">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse qui
-            vel laborum possimus fugiat aperiam reiciendis, minus deserunt ea
-            ipsum!
-          </p>
         </motion.div>
-        <div className="mt-16 md:mt-0">
-          {isAboveMediumScreens ? (
-            <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 
-            before:w-full before:h-full before:border-2 before:border-red before:z-[-1]"
-            >
-              <img
-                alt="skills"
-                className=" z-10 "
-                src="assets/skills-image.png"
-              />
-            </div>
-          ) : (
-            <img
-              alt="skills"
-              className=" z-10 "
-              src="assets/skills-image.png"
-            />
-          )}
-        </div>
       </div>
 
       {/* Skills */}
@@ -68,19 +43,45 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Back-end
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]"></div>
           </div>
-          <p className="mt-5">
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ad
-            tempora sint, aliquid eius quam! Autem voluptatibus harum
-            doloremque. Nesciunt?
-          </p>
+
+          <div className="flex items-start mt-20 ">
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Backend/springio-icon.svg"
+              alt="Spring"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Backend/nodejs-original-wordmark.svg"
+              alt="NodeJs"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Backend/nestjs-plain.svg"
+              alt="NestJs"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Backend/graphql-icon.svg"
+              alt="Graphql"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
+              alt="Express"
+              width="40"
+              height="40"
+            />
+          </div>
         </motion.div>
         {/* Front-end */}
         <motion.div
@@ -96,19 +97,51 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-5xl"></p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Front-end
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-orange absolute right-0 top-0 z-[-1]"></div>
           </div>
-          <p className="mt-5">
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ad
-            tempora sint, aliquid eius quam! Autem voluptatibus harum
-            doloremque. Nesciunt?
-          </p>
+          <div className="flex items-start mt-20">
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/css3-original-wordmark.svg"
+              alt="Css"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/html5-original-wordmark.svg"
+              alt="HTML"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg"
+              alt="React"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/tailwindcss-icon.svg"
+              alt="Tailwindcss"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/sass-original.svg"
+              alt="Sass"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/webpack-original-wordmark.svg"
+              alt="Webpack"
+              width="40"
+              height="40"
+            />
+          </div>
         </motion.div>
         {/* Others */}
         <motion.div
@@ -124,19 +157,87 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
+              <p className="font-playfair font-semibold text-5xl"></p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Others
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]"></div>
           </div>
-          <p className="mt-5">
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ad
-            tempora sint, aliquid eius quam! Autem voluptatibus harum
-            doloremque. Nesciunt?
-          </p>
+          <div className="flex items-start mt-20">
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/javascript-original.svg"
+              alt="Javascript"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/python-original.svg"
+              alt="Python"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/java-original.svg"
+              alt="Java"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Database/mysql-original-wordmark.svg"
+              alt="Mysql"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Database/postgresql-original-wordmark.svg"
+              alt="Postgresql"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/BackendService/firebase-icon.svg"
+              alt="Firebase"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/BackendService/heroku-icon.svg"
+              alt="Heroku"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Devops/amazonwebservices-original-wordmark.svg"
+              alt="Amazon Web Services"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Devops/docker-original-wordmark.svg"
+              alt="Docker"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Static/nextjs-2.svg"
+              alt="Nextjs"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Other/git-scm-icon.svg"
+              alt="Git"
+              width="40"
+              height="40"
+            />
+            <img
+              src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Other/linux-original.svg"
+              alt="Linux"
+              width="40"
+              height="40"
+            />
+          </div>
         </motion.div>
       </div>
     </section>

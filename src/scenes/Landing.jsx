@@ -9,31 +9,31 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex mt-16 md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* Image section */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10 mt-16 md:mt-34 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-red before:z-[-1]"
+            className="relative z-0 ml-20 before:absolute mt-12 mr-5 before:-top-10 before:-left-20 before:rounded-t-[400px]
+            before:w-full before:max-w-[200px] md:before:max-w-[600px] before:h-full before:border-2 before:border-red before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/randy.png"
+              className="hover:filter mt-12 hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[300px] "
+              src="../../public/assets/profile.png"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/randy.png"
+            className="z-10 w-full max-w-[200px] md:max-w-[350px]"
+            src="../../public/assets/profile.png"
           />
         )}
       </div>
       {/*Main section */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32 ">
+      <div className="z-30  basis-2/5 mt-12 md:mt-40 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -55,9 +55,9 @@ const Landing = ({ setSelectedPage }) => {
               Díaz
             </span>
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            I mean, this was something I made! Something that came from me! That
-            was a part of me! The only thing I ever made that was any good!
+          <p className="mt-10 mb-7 text-xl text-center md:text-start">
+            Hi!, I'm a passionate Full-stack developer with experience in many
+            different technologies.
           </p>
         </motion.div>
         {/*Call to actions*/}
@@ -79,15 +79,19 @@ const Landing = ({ setSelectedPage }) => {
           >
             Contact Me
           </AnchorLink>
-          <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
+          <div
+            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5
+            "
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
-              Let's talk.
-            </div>
-          </AnchorLink>
+            <a
+              className="bg-black hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10"
+              href="https://drive.google.com/drive/folders/1CoCXByKhBZA-nUaQc3TUlN-aahvPSS9_"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
+          </div>
         </motion.div>
         <motion.div
           initial="hidden"
